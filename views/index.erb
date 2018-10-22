@@ -1,0 +1,6 @@
+<% @recipes.each_with_index do |recipe, index| %>
+  <li>
+    <%= recipe.name %> <a href="/destroy?index=<%=index%>">Destroy</a>
+  </li>
+<% end %>
+<a href="/new">Add new recipe</a>
